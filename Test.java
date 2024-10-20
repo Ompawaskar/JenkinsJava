@@ -1,11 +1,10 @@
-public class Test{
-static int factorial(int n){
-  if(n == 1)
-    return 1;
-  return n*factorial(n-1);
-}
-public static void main(String, args[]){
-  int ans = factorial(5);
-  System.out.println("Factorial is" + ans);
-}
+public class Test {
+    public static void main(String[] args) {
+        int number = 5; // Example input
+        int fact = 1;
+        for (int i = 1; i <= number; i++) {
+            fact *= i;
+        }
+        System.out.println("Factorial of " + number + " is: " + fact);
+    }
 }
